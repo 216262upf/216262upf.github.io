@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Meu Blog Pessoal</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">Sobre Mim</a></li>
+                    <li><a href="curriculum.html">Currículo</a></li>
+                    <li><a href="receitas.html">Receitas</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="accessibility-controls">
+                <button id="decrease-font-btn" title="Diminuir fonte">A−</button>
+                <button id="increase-font-btn" title="Aumentar fonte">A+</button>
+                <button id="dark-mode-btn">🌙 Escuro</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1>Entre em Contato</h1>
+            <p>Gostaria de conversar comigo? Preencha o formulário abaixo e entrarei em contato assim que possível!</p>
+
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome Completo *</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefone (opcional)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(XX) 9XXXX-XXXX">
+                    <span class="error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Assunto</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem *</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <span class="error"></span>
+                </div>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+
+            <section style="margin-top: 3rem;">
+                <h2>Outras Formas de Contato</h2>
+                <p>Você também pode me encontrar em:</p>
+                <ul>
+                    <li><strong>Email:</strong> 216262@upf.br</li>
+                    <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/carlos-tironi/" target="_blank">https://www.linkedin.com/in/carlos-tironi/</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/tironi5" target="_blank">https://github.com/tironi5</a></li>
+                    <li><strong>Instagram:</strong> @carlos_tironii</li>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meu Blog Pessoal. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #2c3e50;
-  --secondary-color: #3498db;
+  --primary-color: #c85a17;
+  --secondary-color: #e67e22;
   --text-color: #333;
   --bg-color: #ecf0f1;
   --border-color: #bdc3c7;
@@ -9,7 +9,7 @@
 
 html.dark-mode {
   --primary-color: #1a1a1a;
-  --secondary-color: #1e90ff;
+  --secondary-color: #ff6b6b;
   --text-color: #f0f0f0;
   --bg-color: #2d2d2d;
   --border-color: #444;
@@ -56,6 +56,22 @@ header .header-content {
 header h1 {
   font-size: 1.8rem;
   font-weight: 600;
+}
+
+.header-icon {
+  margin-right: 0.5rem;
+  font-size: 2rem;
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 nav {
@@ -127,7 +143,7 @@ nav ul li a:hover {
 }
 
 .accessibility-controls button:hover {
-  background-color: #2980b9;
+  background-color: #d35400;
 }
 
 /* Main Content */
@@ -303,7 +319,7 @@ table th {
 }
 
 table tr:hover {
-  background-color: rgba(52, 152, 219, 0.1);
+  background-color: rgba(230, 126, 34, 0.1);
 }
 
 /* Formulário de Contato */
@@ -352,7 +368,7 @@ input[type="tel"]:focus,
 textarea:focus {
   outline: none;
   border-color: var(--secondary-color);
-  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+  box-shadow: 0 0 8px rgba(230, 126, 34, 0.3);
 }
 
 textarea {
@@ -381,7 +397,7 @@ button[type="submit"],
 
 button[type="submit"]:hover,
 .btn:hover {
-  background-color: #2980b9;
+  background-color: #d35400;
 }
 
 /* Receitas */

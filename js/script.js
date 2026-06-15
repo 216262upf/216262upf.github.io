@@ -141,6 +141,9 @@ function initFormValidation() {
   });
 }
 
+// Post Favorites
+// favorites removidos — nenhuma funcionalidade relacionada permanece
+
 // Inicializar tudo quando o DOM estiver pronto
 document.addEventListener('DOMContentLoaded', () => {
   initDarkMode();

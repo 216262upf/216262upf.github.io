@@ -50,11 +50,18 @@ header .header-content {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+  position: relative;
 }
 
 header h1 {
   font-size: 1.8rem;
   font-weight: 600;
+}
+
+nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 nav ul {
@@ -86,6 +93,25 @@ nav ul li a:hover {
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  z-index: 110;
+  background: rgba(44, 62, 80, 0.9);
+  padding: 0.35rem 0.5rem;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .accessibility-controls {
+    position: static;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+  }
 }
 
 .accessibility-controls button {

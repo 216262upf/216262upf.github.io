@@ -18,7 +18,7 @@ function initDarkMode() {
   });
 }
 
-// Accessibility - Font Size Control
+// Acessibilidade - Ajuste do Tamanho da Fonte
 function initAccessibility() {
   const increaseFontBtn = document.getElementById('increase-font-btn');
   const decreaseFontBtn = document.getElementById('decrease-font-btn');
@@ -47,7 +47,7 @@ function initAccessibility() {
   });
 }
 
-// Form Validation
+// Validação do Formulário
 function initFormValidation() {
   const contactForm = document.getElementById('contact-form');
   if (!contactForm) return;
@@ -141,8 +141,8 @@ function initFormValidation() {
   });
 }
 
-// Post Favorites
-// favorites removidos — nenhuma funcionalidade relacionada permanece
+// Postagens favoritas
+// favoritos removidos — nenhuma funcionalidade relacionada permanece
 
 // Inicializar tudo quando o DOM estiver pronto
 document.addEventListener('DOMContentLoaded', () => {
